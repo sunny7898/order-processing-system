@@ -21,9 +21,9 @@ public class EmployeeDAO {
 		String userName = employee.getUserName();
 		String password = employee.getPassword();
 		
-		String searchQuery = "SELECT * FROM EMPLOYEES WHERE username =" 
+		String searchQuery = "SELECT * FROM EMPLOYEES WHERE UserName =" 
 								+ userName 
-								+ "AND password=" 
+								+ " AND Password=" 
 								+ password 
 								+";";
 		

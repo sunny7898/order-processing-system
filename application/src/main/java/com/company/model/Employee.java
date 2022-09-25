@@ -1,12 +1,17 @@
 package com.company.model;
 
+import java.util.ArrayList;
+
 public class Employee {
 	private String id;
 	private String userName;
 	private String password;
 	private String firstName;
 	private String lastName;
+	private String lastLoggedInDateTime;
+	private ArrayList<String> orders;
 	private boolean valid;
+	
 	public String getId() {
 		return id;
 	}
@@ -44,5 +49,8 @@ public class Employee {
 		this.valid = valid;
 	}
 	
+	public ArrayList<String> getOrders(String empId){
+		return orders;
+	}
 	
 }
